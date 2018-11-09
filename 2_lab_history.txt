@@ -1,0 +1,79 @@
+1 less README-ru.md
+2 cd
+3 history > 1_lab_history.txt
+4 ls
+5 cd ..
+6 ls
+7 cd..
+8 ls
+9 history > 1_lab_history.txt
+10 ls
+11 cd home/
+12 ls
+13 cd..
+14 cd ..
+15 ls
+16 cd ..
+17 cd home/
+18 history >1_lab_history.txt
+19 ls
+20 mkdir test
+21 cd test/
+22 ls -1
+23 chmod a-r file
+24 chmod a-w file
+25 touch file
+26 ls -1
+27 chmod a-r file
+28 chmod a-w file
+29 ls -1 
+30 echo "test" > ./file
+31 cat file
+32 chmod u-w file
+33 11
+34 chmod u+w file
+35 11
+36 echo "test" >./file
+37 cat file
+38 chmod g+r file
+39 11
+40 ll
+41 cat file
+42 chmod u+r file
+43 ll
+44 ls -1
+45 ls -l
+46 mkdir dir
+47 touch ./dir/new_file
+48 echo "file 2" > ./dir/new_file
+49 cd dir
+50 ls
+51 cd ..
+52 chmod a-x dir
+53 cat ./dir/new_file
+54 cd dir
+55 cd..
+56 cd ..
+57 rm ./dir/new_file
+58 chown root ./dir.new_file
+59 chown :root ./dir/new_file
+60 man umask
+61 umask 177
+62 touch file 1
+63 ls -l
+64 umask 011
+65 umask 044
+66 touh file 2
+67 touch file2
+68 ls -l
+69 umask 111
+70 toych file2_1_more_try
+71 touch file2_1_more_try
+72 ls -1
+73 cat file
+74 ls -l
+75 cat file
+76 sl -lr
+77 ls - lr
+78 cd home/
+79 history > 2_lab_history.txt
