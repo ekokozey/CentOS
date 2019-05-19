@@ -1,0 +1,31 @@
+  734  ldd /bin/ls | grep selinux
+  735  ls -l /etc/selinux/
+  736  ls -l /etc/selinux/targeted/
+  737  vi /etc/selinux/config 
+  738  sestatus
+  739  getenforce
+  740  cat /sys/fs/selinux/enforce 
+  741  vi /etc/selinux/config 
+  742  sudo
+  743  su
+  744  sestatus
+  745  getenforce
+  746  sudo
+  747  su
+  748  sestatus
+  749  getenforce
+  750  su
+  751  setenforce 1
+  752  su
+  753  cd OpSysSec
+  754  mkdir nlab
+  755  cd nlab/
+  756  touch selin.txt
+  757  ls -z selin.txt 
+  758  ls -Z selin.txt 
+  759  ls -Z ./
+  760   cd ../
+  761  dir
+  762  ls -Z
+  763  sesearch -T -s httpd_t -t var_log_t
+  764 sesearch -T -s httpd_t -t tmp_t

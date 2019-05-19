@@ -1,0 +1,32 @@
+  867  ps xaf
+  868  ps xawf -eo pid,user,cgroup,args
+  869  systemd-cgls
+  870  ls -l /usr/lib/systemd/system/\
+  871  ls -l /usr/lib/systemd/system/
+  872  ls -l /run/systemd/system/
+  873  ls -l /etc/systemd/system/
+  874  systemctl -t help
+  875  systemctl status
+  876  systemctl --type=service
+  877  systemctl status gssproxy.service
+  878  systemctl is-active auditd.service
+  879  systemctl is-enabled auditd.service
+  880  systemctl list-dependencies --after auditd.service
+  881  systemctl list-units --type=service
+  882  systemctl list-units --type=service --all
+  883  systemctl list-units --type=socket --all
+  884  systemctl list-unit-files --type=service
+  885  systemctl --failed --type=service
+  886  su
+  887  systemctl list-units --type=target
+  888  systemctl list-units --type=target --all
+  889  systemctl get-default 
+  890  ls -l /etc/systemd/system/default.target
+  891  systemctl set-default multi-user.target
+  892  systemctl isolate multi-user.target
+  893  systemctl --no-wall rescue
+  894  systemctl set-default graphical.target
+  895  systemctl isolate graphical.target
+  896  systemctl set-default graphical.target
+  897  systemctl --no-wall emergency
+  898  systemctl poweroff

@@ -1,0 +1,36 @@
+  210  vi /etc/selinux/config 
+  211  reboot
+  212  vi /etc/selinux/config 
+  213  reboot
+  214  vi /etc/selinux/config 
+  215  reboot
+  216  setenforce 1
+  217  getenforce
+  218  setenforce 0
+  219  getenforce
+  220  setenforce 1
+  221  sudo echo 0 > /sys/fs/selinux/enforce
+  222  getenforce
+  223  sudo echo 1 > /sys/fs/selinux/enforce
+  224  getenforce
+  225  exit
+  226  vim /boot/config-3.10.0-862.el7.x86_64 
+  227  cat /boot/config-3.10.0-862.el7.x86_64 | grep CONFIG_SECURITY_SELINUX_DEVELOP
+  228  cat /boot/config-3.10.0-862.14.4.el7.x86_64 | grep CONFIG_SECURITY_SELINUX_DEVELOP
+  229  cat /boot/config-3.10.0-862.14.4.el7.x86_64 | grep ONFIG_SECURITY_SELINUX_BOOTPARAM
+  230  cat /boot/config-3.10.0-862.14.4.el7.x86_64 | grep CONFIG_SECURITY_SELINUX_BOOTPARAM
+  231  cat /boot/config-3.10.0-862.el7.x86_64 | grep CONFIG_SECURITY_SELINUX_BOOTPARAM
+  232  seinfo
+  233  yum install setools-console
+  234  history
+  235  seinfo
+  236  seinfo -cfile -x
+  237  seinfo -cdir -x
+  238  seinfo -cblk_file -x
+  239  seinfo -cchr_file -x
+  240  seinfo -clnk_file -x
+  241  seinfo -cfifo_file -x
+  242  seinfo -csock_file -x
+  243  seinfo -cfilesystem -x
+  244  cat /etc/selinux/targeted/contexts/files/file_contexts.homedirs
+  245 semanage fcontext -l
